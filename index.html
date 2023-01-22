@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="rel">
+    <title>Scientific Calculator</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="calculator">
+          <div class="display">
+            <input id="output" type="text" name="" disabled/>
+          </div>
+          <div id="buttons">  
+
+            <div class="row">
+              <div class="button">DEG</div>
+              <div class="button">F-E</div>
+            </div>
+
+            <div class="row">
+              <div class="button">MC</div>
+              <div class="button">MR</div>
+              <div class="button">M+</div>
+              <div class="button">M-</div>
+              <div class="button">MS</div>
+            </div>
+
+            <div class="row"></div>
+              <div class="dropdown">
+                <button class="dropbtn">Trigonometry  &#8964;</button>
+                <div class="dropdown-content">
+                <a class="button" id="sin">sin</a>
+                <a class="button">cos</a>
+                <a class="button">tan</a>
+                <a class="button">sinh</a>
+                <a class="button">cosh</a>
+                <a class="button">tanh</a>
+                </div>
+              <div class="fun" id="fun">Function &#8964;</div>
+            </div>
+
+            <div class="row">
+              <div class="button">2nd</div>
+              <div class="button">π</div>
+              <div class="button">e</div>
+              <div class="button" id="clear">C</div>
+              <div class="button" id="backspace"><=</div>
+            </div>
+
+            <div class="row">
+              <div class="button">x^2</div>
+              <div class="button">1/x</div>
+              <div class="button">|x|</div>
+              <div class="button">exp</div>
+              <div class="button">mod</div>
+            </div>
+
+            <div class="row">
+             
+              <div class="button">2√x</div>
+              <div class="button">(</div>
+              <div class="button">)</div>
+              <div class="button">n!</div>
+              <div class="button">÷</div>
+            </div>
+            <div class="row">
+              
+              <div class="button">x^y</div>
+              <div class="button number">7</div>
+              <div class="button number">8</div>
+              <div class="button number">9</div>
+              <div class="button">x</div>
+            </div>
+            <div class="row">
+              <div class="button">10^x</div>
+              <div class="button number">4</div>
+              <div class="button number">5</div>
+              <div class="button number">6</div>
+              <div class="button">-</div>
+            </div>
+            <div class="row">
+                <div class="button">log</div>
+              <div class="button number">1</div>
+              <div class="button number">2</div>
+              <div class="button number">3</div>
+              <div class="button">+</div>
+            </div>
+            <div class="row">
+                <div class="button">ln</div>
+              <div class="button number" >+/-</div>
+              <div class="button number" >0</div>
+              <div class="button">.</div>
+              <div class="button" id="equals">=</div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+    <script src="cal_fun.js"></script>
+</html>

@@ -1,0 +1,114 @@
+.calculator{
+    max-width: 612px;
+    margin: 10px auto;
+}
+#output {
+  background-color: #000;
+  color: #fff;
+  width: 83%;
+  height: 80px;
+  font-size: 48px;
+  border-radius: 5px;
+  text-align: left;
+  padding: 0px 10px 0px 10px;
+  box-shadow: 0px 0px 30px -5px #fff;
+  box-sizing: border-box;
+}
+#buttons {
+  margin-top: 15px;
+}
+
+#fun {
+  width: 252px;
+}
+
+.fun {
+  color: #fff;
+  text-align: center;
+  line-height: 70px;
+  display: inline-block;
+  background-color: #595959;
+  border: 1px solid #33ccff;
+  height: 70px;
+  width: 100px;
+  font-size: 36px;
+  margin-right: -4.6px;
+  cursor: pointer;
+}
+.button {
+  color: #fff;
+  text-align: center;
+  line-height: 70px;
+  display: inline-block;
+  background-color: #595959;
+  border: 1px solid #33ccff;
+  height: 65px;
+  width: 100px;
+  font-size: 36px;
+  margin-right: -4.6px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #0066ff;
+  box-shadow: 0px 0px 30px 0px #fff;
+}
+#decimal {
+  font-weight: bold;
+}
+#equals {
+  background-color: #0066ff;
+}
+#equals:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0px 0px 30px -5px #fff;
+}
+#backspace:hover {
+  background-color: #0066ff;
+}
+#clear:hover {
+  background-color: #0066ff;
+}
+
+/* Trigonometry Dropdown */
+.dropbtn {
+  background-color: #595959;
+  color: white;
+  padding: 17.5px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  width: 252px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  background-color: white;
+}
+
+.dropdown-content a:hover {background-color: rgb(154, 157, 158)}
+
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #595959;
+}
