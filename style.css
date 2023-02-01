@@ -1,10 +1,10 @@
-.calculator{
-    max-width: 612px;
-    margin: 10px auto;
+.calculator {
+  max-width: 612px;
+  margin: 10px auto;
 }
 #output {
-  background-color: #000;
-  color: #fff;
+  background-color: white;
+  color: black;
   width: 83%;
   height: 80px;
   font-size: 48px;
@@ -36,11 +36,11 @@
   cursor: pointer;
 }
 .button {
-  color: #fff;
+  color: black;
   text-align: center;
   line-height: 70px;
   display: inline-block;
-  background-color: #595959;
+  background-color: white;
   border: 1px solid #33ccff;
   height: 65px;
   width: 100px;
@@ -91,10 +91,9 @@
   position: absolute;
   background-color: white;
   min-width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
 
 .dropdown-content a {
   color: black;
@@ -103,7 +102,9 @@
   background-color: white;
 }
 
-.dropdown-content a:hover {background-color: rgb(154, 157, 158)}
+.dropdown-content a:hover {
+  background-color: rgb(154, 157, 158);
+}
 
 .dropdown:hover .dropdown-content {
   display: inline-block;

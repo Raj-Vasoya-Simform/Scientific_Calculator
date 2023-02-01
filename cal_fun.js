@@ -1,13 +1,38 @@
 var display = document.getElementById("output");
 var buttons = document.getElementsByClassName("button");
 
-Array.prototype.forEach.call(buttons, function(button) {
-  button.addEventListener("click", function() {
-    if (button.textContent != "=" && button.textContent != "C" && button.textContent != "x" && button.textContent != "÷" && button.textContent != "2√x" 
-       && button.textContent != "mod" && button.textContent != "<=" && button.textContent != "+/-" && button.textContent != "sin" 
-       && button.textContent != "cos" && button.textContent != "tan" && button.textContent != "sinh" && button.textContent != "cosh" && button.textContent != "tanh" && button.textContent != "log"  && button.textContent != "ln" 
-       && button.textContent != "^" && button.textContent != "n!" && button.textContent != "π" && button.textContent != "exp" && button.textContent != "degrees" && button.textContent != "10^x" && button.textContent != "DEG"
-       &&button.textContent != "x^y" && button.textContent != "1/x" && button.textContent != "x^2" && button.textContent != "e") {
+Array.prototype.forEach.call(buttons, function (button) {
+  button.addEventListener("click", function () {
+    if (
+      button.textContent != "=" &&
+      button.textContent != "C" &&
+      button.textContent != "x" &&
+      button.textContent != "÷" &&
+      button.textContent != "2√x" &&
+      button.textContent != "mod" &&
+      button.textContent != "<=" &&
+      button.textContent != "+/-" &&
+      button.textContent != "sin" &&
+      button.textContent != "cos" &&
+      button.textContent != "tan" &&
+      button.textContent != "sinh" &&
+      button.textContent != "cosh" &&
+      button.textContent != "tanh" &&
+      button.textContent != "log" &&
+      button.textContent != "ln" &&
+      button.textContent != "^" &&
+      button.textContent != "n!" &&
+      button.textContent != "π" &&
+      button.textContent != "exp" &&
+      button.textContent != "degrees" &&
+      button.textContent != "10^x" &&
+      button.textContent != "DEG" &&
+      button.textContent != "x^y" &&
+      button.textContent != "1/x" &&
+      button.textContent != "x^2" &&
+      button.textContent != "|x|" &&
+      button.textContent != "e"
+    ) {
       display.value += button.textContent;
     } else if (button.textContent === "=") {
       equals();
@@ -59,13 +84,14 @@ Array.prototype.forEach.call(buttons, function(button) {
       e();
     } else if (button.textContent === "DEG") {
       degrees();
-    }  
+    } else if (button.textContent === "|x|") {
+      absolute();
+    }
     // } else if (button.textContent === "2√x") {
     //   twoSquaRoot();
     // }
   });
 });
-
 
 // ***button functions***
 function checkLength() {
@@ -79,9 +105,9 @@ function syntaxError() {
   }
 }
 function equals() {
-  if ((display.value).indexOf("^") > -1) {
-    var base = (display.value).slice(0, (display.value).indexOf("^"));
-    var exponent = (display.value).slice((display.value).indexOf("^") + 1);
+  if (display.value.indexOf("^") > -1) {
+    var base = display.value.slice(0, display.value.indexOf("^"));
+    var exponent = display.value.slice(display.value.indexOf("^") + 1);
     display.value = eval("Math.pow(" + base + "," + exponent + ")");
   } else {
     display.value = eval(display.value);
@@ -123,16 +149,16 @@ function factorial() {
   }
 }
 function pi() {
-  display.value = (display.value * Math.PI);
+  display.value = display.value * Math.PI;
 }
 function e() {
-  display.value = (display.value * Math.E)
+  display.value = display.value * Math.E;
 }
 function square() {
   display.value = eval(display.value * display.value);
 }
 function squareRoot() {
-  display.value = 2 * Math.sqrt(display.value);
+  display.value = Math.sqrt(display.value);
 }
 function percent() {
   display.value = display.value / 100;
@@ -162,7 +188,7 @@ function ln() {
   display.value = Math.log(display.value);
 }
 function power() {
-    display.value = Math.pow(10,display.value);
+  display.value = Math.pow(10, display.value);
 }
 function exponent() {
   display.value = display.value + "^";
@@ -170,19 +196,23 @@ function exponent() {
 function exp() {
   display.value = Math.exp(display.value);
 }
-function xPowY () {
+function xPowY() {
   // display.value = Math.pow(display.value , display.value);
-  display.value = display.value +"^";
+  display.value = display.value + "^";
 }
 
 function oneByx() {
-  display.value = 1 + "/" + display.value ;
+  display.value = 1 + "/" + display.value;
 }
 
-function xPow () {
+function xPow() {
   display.value = Math.pow(display.value, 2);
 }
 
 function degrees() {
   display.value = display.value * (180 / Math.PI);
+}
+
+function absolute() {
+  display.value = Math.abs(display.value);
 }
