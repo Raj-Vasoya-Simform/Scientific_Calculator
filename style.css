@@ -21,7 +21,16 @@
 #fun {
   width: 252px;
 }
+<<<<<<< HEAD
 
+=======
+#clear{
+  background-color: green;
+}
+#backspace{
+  background-color: red;
+}
+>>>>>>> 4683f81 (All Files Modified)
 .fun {
   color: #fff;
   text-align: center;
@@ -40,6 +49,10 @@
   text-align: center;
   line-height: 70px;
   display: inline-block;
+<<<<<<< HEAD
+=======
+  /* display: flex; */
+>>>>>>> 4683f81 (All Files Modified)
   background-color: white;
   border: 1px solid #33ccff;
   height: 65px;
@@ -48,6 +61,15 @@
   margin-right: -4.6px;
   cursor: pointer;
 }
+<<<<<<< HEAD
+=======
+.row2{
+  float: right;
+}
+.row1{
+  float: left;
+}
+>>>>>>> 4683f81 (All Files Modified)
 .button:hover {
   background-color: #0066ff;
   box-shadow: 0px 0px 30px 0px #fff;
@@ -71,6 +93,11 @@
 }
 
 /* Trigonometry Dropdown */
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 4683f81 (All Files Modified)
 .dropbtn {
   background-color: #595959;
   color: white;
@@ -84,6 +111,10 @@
 .dropdown {
   position: relative;
   display: inline-block;
+<<<<<<< HEAD
+=======
+  height: 80px;
+>>>>>>> 4683f81 (All Files Modified)
 }
 
 .dropdown-content {
@@ -91,6 +122,10 @@
   position: absolute;
   background-color: white;
   min-width: 100px;
+<<<<<<< HEAD
+=======
+  height: 80px;
+>>>>>>> 4683f81 (All Files Modified)
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -98,8 +133,14 @@
 .dropdown-content a {
   color: black;
   text-decoration: none;
+<<<<<<< HEAD
   display: block;
   background-color: white;
+=======
+  display: inline-flexbox;
+  background-color: skyblue;
+  border: white solid 3px;
+>>>>>>> 4683f81 (All Files Modified)
 }
 
 .dropdown-content a:hover {
@@ -113,3 +154,58 @@
 .dropdown:hover .dropbtn {
   background-color: #595959;
 }
+<<<<<<< HEAD
+=======
+
+/*Function Dropdown*/
+
+.dropbtn1 {
+  background-color: #595959;
+  color: white;
+  padding: 17.5px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  width: 252px;
+  height: 40px;
+}
+
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 100px;
+  height: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content1 a {
+  color: black;
+  text-decoration: none;
+  display: inline-flexbox;
+  background-color: skyblue;
+  border: white solid 3px;
+  
+}
+
+.dropdown-content1 a:hover {
+  background-color: rgb(154, 157, 158);
+}
+
+.dropdown1:hover .dropdown-content1 {
+  display: inline-block;
+}
+
+.dropdown1:hover .dropbtn1 {
+  background-color: #595959;
+}
+
+
+
+>>>>>>> 4683f81 (All Files Modified)

@@ -10,7 +10,11 @@ Array.prototype.forEach.call(buttons, function (button) {
       button.textContent != "÷" &&
       button.textContent != "2√x" &&
       button.textContent != "mod" &&
+<<<<<<< HEAD
       button.textContent != "<=" &&
+=======
+      button.textContent != "⌫" &&
+>>>>>>> 4683f81 (All Files Modified)
       button.textContent != "+/-" &&
       button.textContent != "sin" &&
       button.textContent != "cos" &&
@@ -44,7 +48,11 @@ Array.prototype.forEach.call(buttons, function (button) {
       divide();
     } else if (button.textContent === "+/-") {
       plusMinus();
+<<<<<<< HEAD
     } else if (button.textContent === "<=") {
+=======
+    } else if (button.textContent === "⌫") {
+>>>>>>> 4683f81 (All Files Modified)
       backspace();
     } else if (button.textContent === "mod") {
       percent();
@@ -216,3 +224,8 @@ function degrees() {
 function absolute() {
   display.value = Math.abs(display.value);
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 4683f81 (All Files Modified)
