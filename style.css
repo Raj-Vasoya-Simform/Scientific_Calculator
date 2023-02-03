@@ -68,7 +68,7 @@ h1 {
 }
 .button:hover {
   background-color: aqua;
-  box-shadow: 0px 0px 30px 0px #fff;
+  box-shadow: 0px 0px 30px 0px aqua;
 }
 #decimal {
   font-weight: bold;
@@ -79,6 +79,44 @@ h1 {
 
 #backspace:hover {
   background-color: red;
+}
+
+#id0 {
+  background-color: rgb(225, 221, 221);
+}
+
+#id1 {
+  background-color: rgb(225, 221, 221);
+}
+
+#id2 {
+  background-color: rgb(225, 221, 221);
+}
+
+#id3 {
+  background-color: rgb(225, 221, 221);
+}
+#id4 {
+  background-color: rgb(225, 221, 221);
+}
+
+#id5 {
+  background-color: rgb(225, 221, 221);
+}
+
+#id6 {
+  background-color: rgb(225, 221, 221);
+}
+#id7 {
+  background-color: rgb(225, 221, 221);
+}
+
+#id8 {
+  background-color: rgb(225, 221, 221);
+}
+
+#id9 {
+  background-color: rgb(225, 221, 221);
 }
 
 /* Trigonometry Dropdown */
