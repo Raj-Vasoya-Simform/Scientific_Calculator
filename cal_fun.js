@@ -266,7 +266,7 @@ function memoryPlus() {
 }
 
 function memoryMinus() {
-  display.value = Number(display.value) - Number(ms);
+  display.value = Math.abs(Number(display.value) - Number(ms));
   ms = display.value;
 }
 
