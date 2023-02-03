@@ -57,7 +57,7 @@ Array.prototype.forEach.call(buttons, function (button) {
     } else if (button.textContent === "⌫") {
       backspace();
     } else if (button.textContent === "mod") {
-      percent();
+      mod();
     } else if (button.textContent === "π") {
       pi();
     } else if (button.textContent === "2√x") {
@@ -184,8 +184,8 @@ function square() {
 function squareRoot() {
   display.value = Math.sqrt(display.value);
 }
-function percent() {
-  display.value = display.value / 100;
+function mod() {
+  display.value = display.value + "%";
 }
 function sin() {
   display.value = Math.sin(display.value);
