@@ -89,9 +89,6 @@ Array.prototype.forEach.call(buttons, function (button) {
     } else if (button.textContent === "|x|") {
       absolute();
     }
-    // } else if (button.textContent === "2√x") {
-    //   twoSquaRoot();
-    // }
   });
 });
 
@@ -218,4 +215,3 @@ function degrees() {
 function absolute() {
   display.value = Math.abs(display.value);
 }
-

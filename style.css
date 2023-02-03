@@ -1,15 +1,13 @@
-body{
-  background-color: black;
-}
-
 .calculator {
+  /* max-width: 38.25rem; */
   max-width: 612px;
   margin: 10px auto;
+  margin-top: 12.5rem;
 }
 #output {
   background-color: white;
   color: black;
-  width: 83%;
+  width: 500px;
   height: 80px;
   font-size: 48px;
   border-radius: 5px;
@@ -19,17 +17,17 @@ body{
   box-sizing: border-box;
 }
 #buttons {
-  margin-top: 15px;
+  margin-top: 50px;
 }
 
 #fun {
-  width: 252px;
+  width: 253px;
 }
 
-#clear{
+#clear {
   background-color: green;
 }
-#backspace{
+#backspace {
   background-color: red;
 }
 
@@ -59,14 +57,14 @@ body{
   margin-right: -4.6px;
   cursor: pointer;
 }
-.row2{
+.row2 {
   float: right;
 }
-.row1{
+.row1 {
   float: left;
 }
 .button:hover {
-  background-color: #0066ff;
+  background-color: rgb(156, 152, 152);
   box-shadow: 0px 0px 30px 0px #fff;
 }
 #decimal {
@@ -76,7 +74,7 @@ body{
   background-color: #0066ff;
 }
 #equals:hover {
-  background-color: #fff;
+  background-color: green;
   color: #000;
   box-shadow: 0px 0px 30px -5px #fff;
 }
@@ -169,7 +167,6 @@ body{
   display: inline-flexbox;
   background-color: skyblue;
   border: white solid 3px;
-  
 }
 
 .dropdown-content1 a:hover {
@@ -183,4 +180,3 @@ body{
 .dropdown1:hover .dropbtn1 {
   background-color: #595959;
 }
-
