@@ -28,6 +28,7 @@ Array.prototype.forEach.call(buttons, function (button) {
       button.textContent != "degrees" &&
       button.textContent != "10^x" &&
       button.textContent != "DEG" &&
+      button.textContent != "RAD" &&
       button.textContent != "x^y" &&
       button.textContent != "1/x" &&
       button.textContent != "x²" &&
@@ -93,6 +94,8 @@ Array.prototype.forEach.call(buttons, function (button) {
       e();
     } else if (button.textContent === "DEG") {
       degrees();
+    } else if (button.textContent === "RAD") {
+      radians();
     } else if (button.textContent === "|x|") {
       absolute();
     } else if (button.textContent === "rand") {
@@ -124,6 +127,7 @@ function syntaxError() {
     display.value = "Syntax Error";
   }
 }
+
 function equals() {
   if (display.value.indexOf("^") > -1) {
     var base = display.value.slice(0, display.value.indexOf("^"));
@@ -231,6 +235,10 @@ function xPow() {
 
 function degrees() {
   display.value = display.value * (180 / Math.PI);
+}
+
+function radians() {
+  display.value = display.value * (Math.PI / 180);
 }
 
 function absolute() {
