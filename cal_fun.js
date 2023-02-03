@@ -30,8 +30,15 @@ Array.prototype.forEach.call(buttons, function (button) {
       button.textContent != "DEG" &&
       button.textContent != "x^y" &&
       button.textContent != "1/x" &&
-      button.textContent != "x^2" &&
+      button.textContent != "x²" &&
       button.textContent != "|x|" &&
+      button.textContent != "rand" &&
+      button.textContent != "MS" &&
+      button.textContent != "MC" &&
+      button.textContent != "M+" &&
+      button.textContent != "M-" &&
+      button.textContent != "MR" &&
+      button.textContent != "F-E" &&
       button.textContent != "e"
     ) {
       display.value += button.textContent;
@@ -80,7 +87,7 @@ Array.prototype.forEach.call(buttons, function (button) {
       exp();
     } else if (button.textContent === "1/x") {
       oneByx();
-    } else if (button.textContent === "x^2") {
+    } else if (button.textContent === "x²") {
       xPow();
     } else if (button.textContent === "e") {
       e();
@@ -88,6 +95,20 @@ Array.prototype.forEach.call(buttons, function (button) {
       degrees();
     } else if (button.textContent === "|x|") {
       absolute();
+    } else if (button.textContent === "rand") {
+      random();
+    } else if (button.textContent === "MS") {
+      memory_store();
+    } else if (button.textContent === "MC") {
+      memory_clear();
+    } else if (button.textContent === "M+") {
+      memoryPlus();
+    } else if (button.textContent === "M-") {
+      memoryMinus();
+    } else if (button.textContent === "MR") {
+      memory_read();
+    } else if (button.textContent === "F-E") {
+      f_e();
     }
   });
 });
@@ -214,4 +235,37 @@ function degrees() {
 
 function absolute() {
   display.value = Math.abs(display.value);
+}
+
+function random() {
+  display.value = Math.random(display.value);
+}
+let ms;
+function memory_store() {
+  ms = display.value;
+  display.value = "";
+  console.log(ms);
+}
+
+function memory_clear() {
+  ms = "";
+  display.value = "";
+}
+
+function memoryPlus() {
+  display.value = Number(display.value) + Number(ms);
+  ms = display.value;
+}
+
+function memoryMinus() {
+  display.value = Number(display.value) - Number(ms);
+  ms = display.value;
+}
+
+function memory_read() {
+  display.value = ms;
+}
+
+function f_e() {
+  display.value = Number(display.value).toExponential();
 }

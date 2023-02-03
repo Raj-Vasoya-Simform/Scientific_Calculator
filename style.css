@@ -1,8 +1,12 @@
+h1 {
+  text-align: center;
+  margin-right: 130px;
+}
 .calculator {
   /* max-width: 38.25rem; */
   max-width: 612px;
   margin: 10px auto;
-  margin-top: 12.5rem;
+  margin-top: 50px;
 }
 #output {
   background-color: white;
@@ -25,18 +29,17 @@
 }
 
 #clear {
-  background-color: green;
-}
-#backspace {
   background-color: red;
 }
+/* #backspace {
+  background-color: red;
+} */
 
 .fun {
   color: #fff;
   text-align: center;
   line-height: 70px;
   display: inline-block;
-  background-color: #595959;
   border: 1px solid #33ccff;
   height: 70px;
   width: 100px;
@@ -64,36 +67,30 @@
   float: left;
 }
 .button:hover {
-  background-color: rgb(156, 152, 152);
+  background-color: aqua;
   box-shadow: 0px 0px 30px 0px #fff;
 }
 #decimal {
   font-weight: bold;
 }
 #equals {
-  background-color: #0066ff;
-}
-#equals:hover {
   background-color: green;
-  color: #000;
-  box-shadow: 0px 0px 30px -5px #fff;
 }
+
 #backspace:hover {
-  background-color: #0066ff;
-}
-#clear:hover {
-  background-color: #0066ff;
+  background-color: red;
 }
 
 /* Trigonometry Dropdown */
 .dropbtn {
-  background-color: #595959;
-  color: white;
+  background-color: rgb(205, 202, 202);
+  color: black;
   padding: 17.5px;
   font-size: 30px;
   border: none;
   cursor: pointer;
   width: 255px;
+  border: 1px solid #33ccff;
 }
 
 .dropdown {
@@ -122,7 +119,7 @@
 }
 
 .dropdown-content a:hover {
-  background-color: rgb(154, 157, 158);
+  background-color: rgb(205, 202, 202);
 }
 
 .dropdown:hover .dropdown-content {
@@ -130,20 +127,20 @@
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #595959;
+  background-color: aqua;
 }
 
 /*Function Dropdown*/
 
 .dropbtn1 {
-  background-color: #595959;
-  color: white;
+  background-color: rgb(205, 202, 202);
+  color: black;
   padding: 17.5px;
   font-size: 30px;
   border: none;
   cursor: pointer;
   width: 252px;
-  height: 40px;
+  border: 1px solid #33ccff;
 }
 
 .dropdown1 {
@@ -170,7 +167,7 @@
 }
 
 .dropdown-content1 a:hover {
-  background-color: rgb(154, 157, 158);
+  background-color: rgb(205, 202, 202);
 }
 
 .dropdown1:hover .dropdown-content1 {
@@ -178,5 +175,5 @@
 }
 
 .dropdown1:hover .dropbtn1 {
-  background-color: #595959;
+  background-color: aqua;
 }
