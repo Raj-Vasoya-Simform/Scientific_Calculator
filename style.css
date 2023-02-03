@@ -118,6 +118,15 @@ h1 {
 #id9 {
   background-color: rgb(225, 221, 221);
 }
+#deg {
+  width: 168px;
+}
+#rad {
+  width: 168px;
+}
+#fe {
+  width: 168px;
+}
 
 /* Trigonometry Dropdown */
 .dropbtn {
